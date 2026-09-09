@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+section {
+    width: 100%;
+    max-width: 1024px;
+    height: 575px;
+    margin: 20px auto;
+
+    background-image: url(img/car.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search {
+    width: 60%;
+    padding: 20px;
+
+    background-color: rgba(20, 25, 45, 0.75);
+}
+
+.search h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 5px;
+
+    background-color: #8750ed;
+    color: white;
+
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #7040d0;
+}
+
+.buttons input {
+    height: 32px;
+    padding: 5px 10px;
+    border: none;
+
+    flex: 1;
+    min-width: 150px;
+}
+@media (max-width: 768px) {
+
+    section {
+        width: 80%;
+        height: 450px;
+    }
+
+    .search {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .search h1 {
+        font-size: 20px;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+
+    .buttons button {
+        padding: 9px 20px;
+    }
+}
+@media (max-width: 480px) {
+    section {
+        width: 100%;
+        height: 400px;
+        margin: 10px auto;
+    }
+
+    .search {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .search h1 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .buttons {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .buttons button {
+        padding: 8px 18px;
+    }
+
+    .buttons input {
+        width: 80%;
+        flex: none;
+    }
+}
